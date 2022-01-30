@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Admin Menu</string>
+    <string name="qr_code">qr_code</string>
+    <string name="enter_your_info">Enter your info</string>
+    <string name="generate_qr_code">Generate QR Code</string>
+    <string name="parcely">parcely</string>
+    <string name="parcel">Parcel</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="tracking_number">Tracking Number</string>
+    <string name="insert_parcel_detail">Insert parcel detail:</string>
+    <string name="bg">bg</string>
+    <string name="parcel_form">Parcel Form</string>
+    <string name="submit_details">Submit details</string>
+    <string name="back">Back</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="welcome">Welcome</string>
+</resources>

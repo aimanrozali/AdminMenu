@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="parcel">Parcel</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="tracking_number">Tracking Number</string>
+    <string name="insert_parcel_detail">Insert parcel detail:</string>
+    <string name="bg">bg</string>
+    <string name="parcel_form">Parcel Form</string>
+    <string name="submit_details">Submit details</string>
+    <string name="back">Back</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="welcome">Welcome</string>
+</resources>
