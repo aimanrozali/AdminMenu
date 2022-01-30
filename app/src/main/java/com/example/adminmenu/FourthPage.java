@@ -35,7 +35,14 @@ public class FourthPage extends AppCompatActivity implements View.OnClickListene
         setContentView(R.layout.activity_fourth_page);
         //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-
+        //back button
+        Button btn_back = (Button) findViewById(R.id.pageMain);
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMain();
+            }
+        });
 
         // referencing and initializing
         // the button and textview
