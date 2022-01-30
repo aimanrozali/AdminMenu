@@ -101,8 +101,7 @@ public class FourthPage extends AppCompatActivity implements View.OnClickListene
             }
         };
 
-        // if the intentResult is null then
-        // toast a message as "cancelled"
+        // If cancell scan, prompt cancelled message
         if (intentResult != null) {
             if (intentResult.getContents() == null) {
                 Toast.makeText(getBaseContext(), "Cancelled", Toast.LENGTH_SHORT).show();
