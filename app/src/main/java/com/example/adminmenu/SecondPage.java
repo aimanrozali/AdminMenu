@@ -91,6 +91,8 @@ public class SecondPage extends AppCompatActivity {
                             for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                                 user = dataSnapshot.getValue(Users.class);
                             }
+
+                            //Save customer id according to phone number
                             String cus_id = user.getcusId();
 
                             Query que = dbParcel.orderByChild("trackNum").equalTo(edit_trackNum.getText().toString().trim());

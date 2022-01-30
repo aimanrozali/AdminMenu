@@ -26,7 +26,6 @@ import com.google.zxing.integration.android.IntentResult;
 // implements onClickListener for the onclick behaviour of button
 public class FourthPage extends AppCompatActivity implements View.OnClickListener {
     Button scanBtn;
-    TextView messageText;
     final DatabaseReference dbParcel = FirebaseDatabase.getInstance("https://fir-f9b19-default-rtdb.firebaseio.com/").getReference(Parcel.class.getSimpleName());
 
     @Override
@@ -44,20 +43,13 @@ public class FourthPage extends AppCompatActivity implements View.OnClickListene
             }
         });
 
-        // referencing and initializing
-        // the button and textview
-        //scanBtn = findViewById(R.id.scanBtn);
-
         // adding listener to the button
         scanBtn.setOnClickListener(this);
-
     }
 
     @Override
     public void onClick(View v) {
-        // we need to create the object
-        // of IntentIntegrator class
-        // which is the class of QR library
+        //Onclick, start QR scanner
         IntentIntegrator intentIntegrator = new IntentIntegrator(this);
         intentIntegrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE);
         intentIntegrator.setPrompt(" Scan a QR Code");
@@ -101,8 +93,7 @@ public class FourthPage extends AppCompatActivity implements View.OnClickListene
             }
         };
 
-        // if the intentResult is null then
-        // toast a message as "cancelled"
+        // If cancel scan, prompt cancelled message
         if (intentResult != null) {
             if (intentResult.getContents() == null) {
                 Toast.makeText(getBaseContext(), "Cancelled", Toast.LENGTH_SHORT).show();
