@@ -26,7 +26,6 @@ import com.google.zxing.integration.android.IntentResult;
 // implements onClickListener for the onclick behaviour of button
 public class FourthPage extends AppCompatActivity implements View.OnClickListener {
     Button scanBtn;
-    TextView messageText;
     final DatabaseReference dbParcel = FirebaseDatabase.getInstance("https://fir-f9b19-default-rtdb.firebaseio.com/").getReference(Parcel.class.getSimpleName());
 
     @Override
